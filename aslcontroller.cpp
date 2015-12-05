@@ -394,6 +394,8 @@ std::vector<double> ASLController::createInputVectorESN(){
 		if (i == prevState)	input.push_back(1.0);
 		else input.push_back(0.0);
 	}
+//	for (int i=0;i<12;i++) input.push_back(0.0);
+	
 	input.push_back(prevMotorLeft);
 	input.push_back(prevMotorRight);
 	input.push_back(distanceCurrentBox);
